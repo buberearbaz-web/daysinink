@@ -89,6 +89,9 @@ h2 { margin: 0 0 12px; font-size: clamp(34px, 5.4vw, 46px); line-height: 1.1; }
   counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0;
   width: 32px; font: 28px/1.5 var(--hand); text-align: center;
 }
+.leaves { margin: 18px 0 0; padding-left: 18px; font-size: 14px; }
+.leaves li { padding: 4px 0; }
+#plants .buy { margin-top: 18px; }
 .night { margin: 22px 0 0; padding-top: 16px; border-top: 1px dashed var(--rule); }
 
 .editions { display: grid; gap: 20px; }

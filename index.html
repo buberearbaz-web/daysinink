@@ -32,6 +32,7 @@
       <nav aria-label="Sections">
         <a class="wide-only" href="#how">How it works</a>
         <a href="#editions">Buy</a>
+        <a class="wide-only" href="#plants">Plant guide</a>
         <a class="wide-only" href="#faq">FAQ</a>
       </nav>
     </header>
@@ -158,6 +159,32 @@
   </div>
 </section>
 
+<section id="plants">
+  <div class="wrap split">
+    <figure class="shot">
+      <img src="assets/plants-guide-800.jpg" srcset="assets/plants-guide-800.jpg 800w, assets/plants-guide-1600.jpg 1600w"
+           sizes="(min-width: 920px) 530px, 100vw" width="1600" height="1000" loading="lazy"
+           alt="The Leaf by Leaf guide: a cover with watercolour houseplants, and inside pages showing plant cards and steps for growing cuttings in water.">
+    </figure>
+    <div>
+      <p class="eyebrow">New · A Days in Ink guide</p>
+      <h2>Leaf by Leaf</h2>
+      <p>An indoor plant starter guide for small homes, balconies and terraces. Most houseplants die from too much water in too little light; this guide shows you how to avoid both, one picture at a time.</p>
+      <ul class="leaves">
+        <li>Read your light, then pick from 12 plants that forgive beginners</li>
+        <li>Watering, feeding, pruning and repotting, step by step</li>
+        <li>Free plants from cuttings, and a plan for the five common pests</li>
+        <li>A first-30-days plan, a shopping list and a printable care log</li>
+      </ul>
+      <p class="specs">24 pages · A5 PDF · for beginners</p>
+      <div class="buy">
+        <span class="price">$7</span>
+        <a class="btn primary" data-buy="plants" role="link" aria-disabled="true">Get the plant guide <span class="soon">Coming soon</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="faq">
   <div class="wrap"><div class="faq">
     <h2>Questions</h2>
@@ -184,6 +211,7 @@
   const LINKS = {
     printable: "https://daysinink.gumroad.com/l/days-in-ink",
     paperback: "",   // Amazon product page
+    plants: "",      // Gumroad link for the Leaf by Leaf plant guide
   };
   for (const a of document.querySelectorAll("[data-buy]")) {
     const url = LINKS[a.dataset.buy];
